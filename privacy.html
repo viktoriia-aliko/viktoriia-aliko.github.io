@@ -37,11 +37,11 @@ html{scroll-behavior:smooth}
 <p style="margin: 0; font-size: 14px; color: #5C5C5C">Last updated: 21 November 2026</p>
 <section style="display: flex; flex-direction: column; gap: 10px">
 <h2 style="margin: 0; font-size: 18px; font-weight: 600; color: #141414">1. Data controller</h2>
-<p style="margin: 0">Viktoriia Aliko, freelance model, Milan, Italy. Contact: viktoriia.aliko@gmail.com.</p>
+<p style="margin: 0">Viktoriia Aliko, freelance model, Milan, Italy. Contact: <a href="#contact" class="js-mail" data-a="okila.aiirotkiv" data-b="moc.liamg" data-show style="color: inherit"><noscript>viktoriia.aliko [at] gmail [dot] com</noscript></a>.</p>
 </section>
 <section style="display: flex; flex-direction: column; gap: 10px">
 <h2 style="margin: 0; font-size: 18px; font-weight: 600; color: #141414">2. What data is collected</h2>
-<p style="margin: 0">This website does not use contact forms, accounts or advertising cookies. When you contact me by WhatsApp, email or Instagram, I receive the information you choose to send: your name, company, phone number, email address and the details of your booking request.</p>
+<p style="margin: 0">This website does not use contact forms, accounts or advertising cookies. When you contact me by email or Instagram, I receive the information you choose to send: your name, company, phone number, email address and the details of your booking request.</p>
 </section>
 <section style="display: flex; flex-direction: column; gap: 10px">
 <h2 style="margin: 0; font-size: 18px; font-weight: 600; color: #141414">3. Why it is used</h2>
@@ -49,7 +49,7 @@ html{scroll-behavior:smooth}
 </section>
 <section style="display: flex; flex-direction: column; gap: 10px">
 <h2 style="margin: 0; font-size: 18px; font-weight: 600; color: #141414">4. Sharing</h2>
-<p style="margin: 0">Your data is not sold or shared for marketing. Messages pass through the services you choose (WhatsApp/Meta, Google Mail, Instagram), which process them under their own privacy policies. Payment records may be shared with a tax advisor where required by law.</p>
+<p style="margin: 0">Your data is not sold or shared for marketing. Messages pass through the services you choose (Google Mail, Instagram/Meta), which process them under their own privacy policies. Payment records may be shared with a tax advisor where required by law.</p>
 </section>
 <section style="display: flex; flex-direction: column; gap: 10px">
 <h2 style="margin: 0; font-size: 18px; font-weight: 600; color: #141414">5. Retention</h2>
@@ -61,7 +61,7 @@ html{scroll-behavior:smooth}
 </section>
 <section style="display: flex; flex-direction: column; gap: 10px">
 <h2 style="margin: 0; font-size: 18px; font-weight: 600; color: #141414">7. Your rights</h2>
-<p style="margin: 0">You can ask to access, correct or delete your data, or object to its processing, by writing to viktoriia.aliko@gmail.com. You may also lodge a complaint with the Italian Data Protection Authority (Garante per la protezione dei dati personali).</p>
+<p style="margin: 0">You can ask to access, correct or delete your data, or object to its processing, by writing to <a href="#contact" class="js-mail" data-a="okila.aiirotkiv" data-b="moc.liamg" data-show style="color: inherit"><noscript>viktoriia.aliko [at] gmail [dot] com</noscript></a>. You may also lodge a complaint with the Italian Data Protection Authority (Garante per la protezione dei dati personali).</p>
 </section>
 </main>
 <footer style="border-top: 1px solid #E6E3DE">
@@ -70,5 +70,16 @@ html{scroll-behavior:smooth}
 </div>
 </footer>
 </div>
+<script>
+(function(){
+  function r(s){return s.split('').reverse().join('');}
+  var els=document.querySelectorAll('.js-mail');
+  for(var i=0;i<els.length;i++){(function(el){
+    var m=r(el.getAttribute('data-a'))+'@'+r(el.getAttribute('data-b'));
+    if(el.hasAttribute('data-show')){el.textContent=m;}
+    el.addEventListener('click',function(e){e.preventDefault();window.location.href='mai'+'lto:'+m;});
+  })(els[i]);}
+})();
+</script>
 </body>
 </html>

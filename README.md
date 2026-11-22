@@ -13,8 +13,7 @@ Live site: https://viktoriia-aliko.github.io
 
 ## Contact
 - Instagram: https://instagram.com/viktoriia_aliko
-- WhatsApp: https://wa.me/380938212441
-- Email: viktoriia.aliko@gmail.com
+- Email: see the Contact section of the website
 
 ## Files
 - `index.html`: main page
